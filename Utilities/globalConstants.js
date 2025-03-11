@@ -1,0 +1,4 @@
+export default {
+    coverImage: "https://blogger.googleusercontent.com/img/a/AVvXsEgactIytsYNvvYfQTZFLDKjdwx_dAqrY8eHUB_6EYY4PsP-APuSGx7Jho9VrGpMrHpVImkDrWMnsHrOSzkMjZH_VytMFTKQJeU5bBeqfuUN_sqLBAyMVoQ6vEx53HoL0lfqAPgN3MevRX-Q0_qWfVq2-zWdhnAMHEHpslacSCMM-iY2_NaVl2BcQNcq",
+    logoImgUrl: "https://blogger.googleusercontent.com/img/a/AVvXsEjDXSy3_r2_-Q71ZzL5PPJBIjEHMpzfDq3WcFdESKDv1PFvQ0DGLHi5W0GMXWrK8tXuOxhRbwwNyMoTbH2ahRFbZ73uMJz--3HXfkLa_zSJxQgmRNguLJrhTo5CA144uH2_fDKnK9ePxq2sPB0xh_S6lH-4dNzBb3KZY_Gb5tISWFr1EXj8QnjiTHSn"
+}
