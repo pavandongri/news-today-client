@@ -4,7 +4,6 @@ import Footer from '@/pages/components/Footer'
 import Header from '@/pages/components/Header'
 import Section from '@/pages/components/Section'
 import React, { useEffect, useState } from 'react'
-const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
 const index = () => {
   const [categories, setCategories] = useState([])
