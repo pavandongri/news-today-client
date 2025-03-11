@@ -22,7 +22,9 @@ const Section = ({ categoryName = '', page = 1, pageSize = 5 }) => {
     }, [])
 
     if (isLoading) {
-        return <Loader />
+        return (<div className='pt-10p'>
+            <Loader />
+        </div>)
     }
 
     return (

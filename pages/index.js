@@ -4,6 +4,7 @@ import Header from '@/pages/components/Header'
 import Section from '@/pages/components/Section'
 import dynamic from 'next/dynamic'
 import React, { useEffect, useState } from 'react'
+import MetaHead from './components/MetaHead'
 
 const LazySection = dynamic(() => import('./components/LazySection'));
 
@@ -27,9 +28,9 @@ const index = () => {
 
   return (
     <>
-      <Header />
+      <MetaHead />
 
-      <Section />
+      <Header />
 
       {
         categories?.length > 0 &&
