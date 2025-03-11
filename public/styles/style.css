@@ -179,6 +179,10 @@ body {
     color: grey;
 }
 
+.text-capital{
+    text-transform: capitalize;
+}
+
 .f-14 {
     font-size: 14px;
 }
@@ -308,6 +312,16 @@ body {
 
 
 /* create page */
+
+.user-welcome{
+    background-color: #50845a;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
 
 .ql-editor {
     font-size: 16px;
@@ -639,6 +653,7 @@ body {
     border: 1px solid black;
     background-color: #333;
     color: white;
+    margin-top: 20px
 }
 
 .nav-item a {

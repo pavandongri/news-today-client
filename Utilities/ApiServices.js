@@ -1,9 +1,11 @@
+import { jwtDecode } from 'jwt-decode';
+
 const API_URL = process.env.NEXT_PUBLIC_API_URL
 
 const apiConstants = {
     listStories: '/stories',
     storyBySlug: '/stories/by-slug',
-    
+
     verifyUser: '/users/verify-token',
     createStory: '/stories',
     createCategory: '/categories',
@@ -49,8 +51,19 @@ const postApi = async ({ url, payload }) => {
 const verifyUser = async () => {
     const token = localStorage.getItem('token');
     const userData = JSON.parse(localStorage?.getItem('user'))
+    
+    if(!token) return null
 
-    return userData
+    const decoded = jwtDecode(token);
+
+    let isValid = true;
+
+    if (decoded?.exp) {
+        const currentTime = Date.now() / 1000;
+        isValid = decoded.exp > currentTime;
+    }
+
+    return isValid ? userData : null
 
     try {
         const data = await postApi({

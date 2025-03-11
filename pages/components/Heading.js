@@ -11,7 +11,7 @@ const Heading = ({ title = '', viewMore = false }) => {
                 {
                     viewMore &&
                     <div style={{ display: 'flex' }}>
-                        <a href={`/${title}`} className='heading-view-more'>See More <span>&gt;</span> </a>
+                        <a href={`/${title}`} target='_blank' className='heading-view-more'>See More <span>&gt;</span> </a>
                     </div>
                 }
             </div>

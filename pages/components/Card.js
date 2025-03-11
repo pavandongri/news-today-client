@@ -14,7 +14,7 @@ const Card = ({ story = {} }) => {
 
     return (
         <div>
-            <Link href={'/story-detail/' + story?.slug} style={{ textDecoration: 'none' }}>
+            <Link href={'/story-detail/' + story?.slug} target='_blank' style={{ textDecoration: 'none' }}>
                 <div className='card' onClick={() => { }}>
                     <img src={imgSrc} alt='img' />
                     <p className='fw-bold h-10'>{title?.toString()?.substring(0, titleLength) + `${title?.length >= titleLength ? '...' : ''}`}</p>
