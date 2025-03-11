@@ -22,7 +22,7 @@ const index = () => {
 
   useEffect(() => {
     fetchCategories();
-    document.title = 'Putty'
+    document.title = 'News Today'
   }, [])
 
   return (
