@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from './Card'
 import Heading from './Heading'
-const apiUrl = process.env.apiBaseUrl || 'http://localhost:3009'
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
 const Section = ({ categoryName = '', page = 1, pageSize = 5 }) => {
     const [stories, setStories] = useState(null)

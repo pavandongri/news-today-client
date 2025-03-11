@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import RoutesConstants from '@/Utilities/RoutesConstants';
-const apiBaseUrl = process.env.apiBaseUrl || 'http://localhost:3009'
+const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL
 
 export const Login = () => {
     const [isLoading, setIsLoading] = useState(false)

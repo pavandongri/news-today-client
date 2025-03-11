@@ -4,7 +4,7 @@ import Footer from '@/public/components/Footer'
 import Header from '@/public/components/Header'
 import Section from '@/public/components/Section'
 import React, { useEffect, useState } from 'react'
-const apiUrl = process.env.apiBaseUrl || 'http://localhost:3009'
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
 const index = () => {
   const [categories, setCategories] = useState([])
