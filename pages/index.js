@@ -1,8 +1,8 @@
 import { apiConstants, getApi } from '@/Utilities/ApiServices'
 import Flirt from '@/public/components/Flirt'
-import Footer from '@/public/components/Footer'
-import Header from '@/public/components/Header'
-import Section from '@/public/components/Section'
+import Footer from '@/pages/components/Footer'
+import Header from '@/pages/components/Header'
+import Section from '@/pages/components/Section'
 import React, { useEffect, useState } from 'react'
 const apiUrl = process.env.NEXT_PUBLIC_API_URL
 

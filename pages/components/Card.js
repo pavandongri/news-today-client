@@ -18,7 +18,7 @@ const Card = ({ story = {} }) => {
                 <div className='card' onClick={() => { }}>
                     <img src={imgSrc} alt='img' />
                     <p className='fw-bold h-10'>{title?.toString()?.substring(0, titleLength) + `${title?.length >= titleLength ? '...' : ''}`}</p>
-                    <p className='f-14'> {description.toString().substring(0, paragraphLength) + `${description?.length >= paragraphLength ? '...' : ''}`}</p>
+                    <p className='f-14'> {description?.toString()?.substring(0, paragraphLength) + `${description?.length >= paragraphLength ? '...' : ''}`}</p>
                     <p className='date-para'>{date}</p>
                 </div>
             </Link>

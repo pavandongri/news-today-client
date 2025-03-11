@@ -1,6 +1,6 @@
 import { apiConstants, getApi } from '@/Utilities/ApiServices'
 import { getFormatedDate } from '@/Utilities/HelperFunctions'
-import Header from '@/public/components/Header'
+import Header from '@/pages/components/Header'
 import { useParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 

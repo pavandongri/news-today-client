@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from './Card'
 import Heading from './Heading'
-const apiUrl = process.env.NEXT_PUBLIC_API_URL
+import { getApi } from '@/Utilities/ApiServices'
 
 const Section = ({ categoryName = '', page = 1, pageSize = 5 }) => {
     const [stories, setStories] = useState(null)
@@ -9,9 +9,9 @@ const Section = ({ categoryName = '', page = 1, pageSize = 5 }) => {
     useEffect(() => {
         const getData = async () => {
             if (categoryName) {
-                const response = await fetch(`${apiUrl}/stories?category=${categoryName}&page=${page}&pageSize=${pageSize}`)
-                const responseData = await response?.json()
-                setStories(responseData?.stories)
+                const url = `/stories?category=${categoryName}&page=${page}&pageSize=${pageSize}`
+                const data = await getApi({url:url })
+                setStories(data?.stories)
             }
         }
         getData()
