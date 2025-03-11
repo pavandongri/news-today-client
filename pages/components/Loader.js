@@ -1,10 +1,11 @@
 import React from 'react'
-import { LiaSpiderSolid } from 'react-icons/lia'
 
 const Loader = () => {
     return (
-        <div>
-            <LiaSpiderSolid className="spinner" />
+        <div className='text-center pt-2 pb-2'>
+            <div className="spinner-border text-dark text-center" role="status">
+                <span className="sr-only">Loading...</span>
+            </div>
         </div>
     )
 }

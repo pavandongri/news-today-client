@@ -2,21 +2,28 @@ import React, { useEffect, useState } from 'react'
 import Card from './Card'
 import Heading from './Heading'
 import { getApi } from '@/Utilities/ApiServices'
+import Loader from './Loader'
 
 const Section = ({ categoryName = '', page = 1, pageSize = 5 }) => {
     const [stories, setStories] = useState(null)
+    const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
         const getData = async () => {
             if (categoryName) {
+                setIsLoading(true)
                 const url = `/stories?category=${categoryName}&page=${page}&pageSize=${pageSize}`
-                const data = await getApi({url:url })
+                const data = await getApi({ url: url })
                 setStories(data?.stories)
+                setIsLoading(false)
             }
         }
         getData()
     }, [])
 
+    if (isLoading) {
+        return <Loader />
+    }
 
     return (
         stories?.length > 0 ?

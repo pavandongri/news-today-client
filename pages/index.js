@@ -1,5 +1,4 @@
 import { apiConstants, getApi } from '@/Utilities/ApiServices'
-import Flirt from '@/public/components/Flirt'
 import Footer from '@/pages/components/Footer'
 import Header from '@/pages/components/Header'
 import Section from '@/pages/components/Section'
