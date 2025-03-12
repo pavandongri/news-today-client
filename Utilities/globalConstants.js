@@ -19,5 +19,5 @@ export default {
     facebookUrl: "",
     twitterUrl: "",
     youtubeUrl: "",
-    GAcode: ""
+    GAcode: "G-654X0Y3D1X"
 }
